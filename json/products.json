@@ -1,1 +1,94 @@
-[]
+{
+  "products": [
+    {
+      "img": "",
+      "title": "American Silver Eagle",
+      "size": "1 oz Random Year",
+      "dealer": "Dealer: Gainesville Coins",
+      "discount": "As low as $36.05"
+    },
+    {
+      "img": "",
+      "title": "American Silver Eagle",
+      "size": "1 oz Random Year",
+      "dealer": "Dealer: Gainesville Coins",
+      "discount": "As low as $36.05"
+    },
+    {
+      "img": "",
+      "title": "American Silver Eagle",
+      "size": "1 oz Random Year",
+      "dealer": "Dealer: Gainesville Coins",
+      "discount": "As low as $36.05"
+    },
+    {
+      "img": "",
+      "title": "American Silver Eagle",
+      "size": "1 oz Random Year",
+      "dealer": "Dealer: Gainesville Coins",
+      "discount": "As low as $36.05"
+    },
+    {
+      "img": "",
+      "title": "American Silver Eagle",
+      "size": "1 oz Random Year",
+      "dealer": "Dealer: Gainesville Coins",
+      "discount": "As low as $36.05"
+    },
+    {
+      "img": "",
+      "title": "American Silver Eagle",
+      "size": "1 oz Random Year",
+      "dealer": "Dealer: Gainesville Coins",
+      "discount": "As low as $36.05"
+    },
+    {
+      "img": "",
+      "title": "American Silver Eagle",
+      "size": "1 oz Random Year",
+      "dealer": "Dealer: Gainesville Coins",
+      "discount": "As low as $36.05"
+    },
+    {
+      "img": "",
+      "title": "American Silver Eagle",
+      "size": "1 oz Random Year",
+      "dealer": "Dealer: Gainesville Coins",
+      "discount": "As low as $36.05"
+    },
+    {
+      "img": "",
+      "title": "American Silver Eagle",
+      "size": "1 oz Random Year",
+      "dealer": "Dealer: Gainesville Coins",
+      "discount": "As low as $36.05"
+    },
+    {
+      "img": "",
+      "title": "American Silver Eagle",
+      "size": "1 oz Random Year",
+      "dealer": "Dealer: Gainesville Coins",
+      "discount": "As low as $36.05"
+    },
+    {
+      "img": "",
+      "title": "American Silver Eagle",
+      "size": "1 oz Random Year",
+      "dealer": "Dealer: Gainesville Coins",
+      "discount": "As low as $36.05"
+    },
+    {
+      "img": "",
+      "title": "American Silver Eagle",
+      "size": "1 oz Random Year",
+      "dealer": "Dealer: Gainesville Coins",
+      "discount": "As low as $36.05"
+    }
+  ],
+  "categories": [
+    { "img": "", "category": "Silver Coins" },
+    { "img": "", "category": "Silver Bars" },
+    { "img": "", "category": "Gold Coins" },
+    { "img": "", "category": "Gold Bars" }
+  ]
+}

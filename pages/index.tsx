@@ -16,7 +16,7 @@ export default function Home() {
           <Categories />
           <ProductGrid />
         </ProductView>
-        <AdBanner url="/ad-banner-2.webp" />
+        <AdBanner url="/ad-banner-2.webp" className="container mx-auto" />
       </section>
     </Layout>
   );

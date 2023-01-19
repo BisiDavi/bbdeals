@@ -5,13 +5,13 @@ export default function Categories() {
   return (
     <aside className="w-1/4">
       <h2 className="text-xl my-2">Categories</h2>
-      <ul className="shadow py-1 px-6 rounded-xl my-4">
+      <ul className="shadow py-2 px-4 rounded-xl my-4">
         {categoryContent.categories.map((item) => (
           <li
             key={item.category}
-            className="my-4 flex items-center space-x-4 border-b last:border-b-0"
+            className=" flex px-6 items-center space-x-4 border-b last:border-b-0 h-12 hover:bg-gray-100"
           >
-            <Image src={item.img} alt={item.category} height={40} width={40} />
+            <Image src={item.img} alt={item.category} height={30} width={30} />
             <p className="font-medium text-gray-500">{item.category}</p>
           </li>
         ))}
@@ -22,9 +22,9 @@ export default function Categories() {
             <Image
               src={item.img}
               alt={item.img}
-              height={100}
-              width={100}
-              className="rounded-full bg-gray-100 h-32 w-32 p-4"
+              height={200}
+              width={200}
+              className="rounded-full"
             />
             <p className="font-bold text-center text-gray-500">{item.text}</p>
           </li>

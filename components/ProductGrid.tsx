@@ -1,6 +1,7 @@
 import Button from "@/components/Button";
 import Product from "@/components/Product";
 import productsContent from "@/json/products.json";
+import Image from "next/image";
 
 export default function ProductGrid() {
   return (
@@ -22,8 +23,14 @@ export default function ProductGrid() {
           />
         </div>
         <ul className="right flex space-x-4">
-          <li>Detailed View</li>
-          <li>Grids View</li>
+          <li className="flex items-center space-x-2">
+            <Image src="/list.png" height={30} width={30} alt="list" />
+            <p>Detailed View</p>
+          </li>
+          <li className="flex items-center space-x-2">
+            <Image src="/list.png" height={30} width={30} alt="list" />
+            <p>Grid View</p>
+          </li>
         </ul>
       </div>
       <div className="grid grid-cols-4 gap-6 mt-4">

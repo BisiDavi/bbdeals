@@ -30,6 +30,13 @@ export default function Categories() {
           </li>
         ))}
       </ul>
+      <Image
+        src="/aside-banner.webp"
+        alt="aside banner"
+        height={500}
+        width={300}
+        className="mt-10 w-full"
+      />
     </aside>
   );
 }

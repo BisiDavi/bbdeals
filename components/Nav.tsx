@@ -23,7 +23,7 @@ export default function Nav() {
           />
           <Button
             text="Register"
-            className="bg-orange-500 text-white px-5 py-2 rounded-full hover:opacity-80"
+            className="bg-lightOrange text-white px-5 py-2 rounded-full hover:opacity-80"
           />
         </div>
       </div>

@@ -8,7 +8,7 @@ export default function Footer() {
         height={400}
         width={1440}
         alt="footer banner"
-        className="footerBanner"
+        className="footerBanner w-full"
       />
     </footer>
   );

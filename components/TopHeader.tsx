@@ -2,7 +2,7 @@ import headerContent from "@/json/header.json";
 
 export default function TopHeader() {
   return (
-    <div className="w-full bg-gray-800 py-3">
+    <div className="w-full bg-darkGray py-3">
       <div className="container text-white mx-auto flex justify-between items-center">
         <ul className="space-x-8 flex">
           {headerContent.map((item) => {

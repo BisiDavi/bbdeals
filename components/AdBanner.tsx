@@ -8,7 +8,13 @@ interface Props {
 export default function AdBanner({ url, className }: Props) {
   return (
     <div className={`my-8 w-full ${className}`}>
-      <Image src={url} alt="ad banner" height={200} width={1440} />
+      <Image
+        src={url}
+        alt="ad banner"
+        height={200}
+        width={1440}
+        className="w-full"
+      />
     </div>
   );
 }

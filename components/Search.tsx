@@ -9,7 +9,7 @@ export default function Search() {
       />
       <Button
         text="Search"
-        className="px-8 py-4 w-40 text-xl bg-orange-400 text-white rounded-full absolute right-8 top-5"
+        className="px-8 py-4 w-40 text-xl bg-lightOrange text-white rounded-full absolute right-8 top-5"
       />
     </form>
   );

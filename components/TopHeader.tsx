@@ -10,7 +10,7 @@ export default function TopHeader() {
               item.type === "down" ? "text-red-500" : "text-green-500";
             return (
               <li key={item.element}>
-                {item.element}: <span className="ml-1 mr-2">{item.price}</span>{" "}
+                {item.element}:<span className="ml-1 mr-2">{item.price}</span>{" "}
                 <span className={elementColor}>{item.diff}</span>
               </li>
             );

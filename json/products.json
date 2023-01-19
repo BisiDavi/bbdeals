@@ -100,5 +100,27 @@
       "text": "Gold American Eagle",
       "img": "/gold-coin.webp"
     }
+  ],
+  "favourites": [
+    {
+      "img": "/silver-coin.webp",
+      "text": "Silver American Eagle"
+    },
+    {
+      "img": "/gold-coin.webp",
+      "text": "Gold American Eagle"
+    },
+    {
+      "img": "/gold-coin.webp",
+      "text": "Gold American Eagle"
+    },
+    {
+      "img": "/gold-coin.webp",
+      "text": "Gold American Eagle"
+    },
+    {
+      "img": "/gold-coin.webp",
+      "text": "Gold American Eagle"
+    }
   ]
 }

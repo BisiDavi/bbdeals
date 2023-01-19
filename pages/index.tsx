@@ -1,4 +1,5 @@
 import AdBanner from "@/components/AdBanner";
+import AllFavourites from "@/components/AllFavourites";
 import Banner from "@/components/Banner";
 import Categories from "@/components/Categories";
 import ProductGrid from "@/components/ProductGrid";
@@ -17,6 +18,7 @@ export default function Home() {
           <ProductGrid />
         </ProductView>
         <AdBanner url="/ad-banner-2.webp" className="container mx-auto" />
+        <AllFavourites />
       </section>
     </Layout>
   );

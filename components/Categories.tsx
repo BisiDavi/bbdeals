@@ -5,7 +5,7 @@ export default function Categories() {
   return (
     <aside className="w-1/4">
       <h2 className="text-xl my-2">Categories</h2>
-      <ul className="shadow py-2 px-4 rounded-xl my-4">
+      <ul className="shadow py-2 px-4 rounded-xl  my-4">
         {categoryContent.categories.map((item) => (
           <li
             key={item.category}
@@ -16,7 +16,7 @@ export default function Categories() {
           </li>
         ))}
       </ul>
-      <ul className="flex items-center space-x-4">
+      <ul className="flex items-center space-x-4 mt-10 mb-20">
         {categoryContent.group.map((item) => (
           <li key={item.text} className="flex flex-col space-y-4">
             <Image
@@ -33,8 +33,8 @@ export default function Categories() {
       <Image
         src="/aside-banner.webp"
         alt="aside banner"
-        height={500}
-        width={300}
+        height={800}
+        width={400}
         className="mt-10 w-full"
       />
     </aside>

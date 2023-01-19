@@ -12,7 +12,15 @@ export default function Categories() {
             className="my-4 flex space-x-4 border-b last:border-b-0"
           >
             <Image src={item.img} alt={item.category} height={50} width={50} />
-            {item.category}
+            <p className="font-medium text-gray-500">{item.category}</p>
+          </li>
+        ))}
+      </ul>
+      <ul className="flex items-center space-x-4">
+        {categoryContent.group.map((item) => (
+          <li key={item.text} className="flex flex-col space-y-4">
+            <Image src={item.img} alt={item.img} height={100} width={100} />
+            <p className="font-medium text-gray-500">{item.text}</p>
           </li>
         ))}
       </ul>

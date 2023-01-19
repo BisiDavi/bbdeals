@@ -86,9 +86,19 @@
     }
   ],
   "categories": [
-    { "img": "", "category": "Silver Coins" },
-    { "img": "", "category": "Silver Bars" },
-    { "img": "", "category": "Gold Coins" },
-    { "img": "", "category": "Gold Bars" }
+    { "img": "/coin-1.webp", "category": "Silver Coins" },
+    { "img": "/silverbar.png", "category": "Silver Bars" },
+    { "img": "/goldcoin.png", "category": "Gold Coins" },
+    { "img": "/goldbar.png", "category": "Gold Bars" }
+  ],
+  "group": [
+    {
+      "text": "Silver American Eagle",
+      "img": "/silver-coin.webp"
+    },
+    {
+      "text": "Gold American Eagle",
+      "img": "/gold-coin.webp"
+    }
   ]
 }

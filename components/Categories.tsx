@@ -5,7 +5,7 @@ export default function Categories() {
   return (
     <aside className="w-1/4">
       <h2 className="text-xl my-2">Categories</h2>
-      <ul className="shadow py-4 px-6 rounded-xl my-4">
+      <ul className="shadow py-1 px-6 rounded-xl my-4">
         {categoryContent.categories.map((item) => (
           <li
             key={item.category}
@@ -19,8 +19,14 @@ export default function Categories() {
       <ul className="flex items-center space-x-4">
         {categoryContent.group.map((item) => (
           <li key={item.text} className="flex flex-col space-y-4">
-            <Image src={item.img} alt={item.img} height={100} width={100} />
-            <p className="font-medium text-gray-500">{item.text}</p>
+            <Image
+              src={item.img}
+              alt={item.img}
+              height={100}
+              width={100}
+              className="rounded-full bg-gray-100 h-32 w-32 p-4"
+            />
+            <p className="font-bold text-center text-gray-500">{item.text}</p>
           </li>
         ))}
       </ul>

@@ -11,7 +11,6 @@ export default function Home() {
     <Layout title="Welcome, find bullions at best prices">
       <section>
         <Banner />
-        <Search />
         <AdBanner url="/ad-banner-1.webp" />
         <ProductView>
           <Categories />

@@ -2,14 +2,14 @@ import Button from "@/components/Button";
 
 export default function Search() {
   return (
-    <form className="container rounded-full bg-white relative h-30 shadow">
+    <form className="container mx-auto relative -mt-14 rounded-full">
       <input
         placeholder="Enter Product Name"
-        className="placeholder:text-gray-500 w-full"
+        className="placeholder:text-gray-400 text-2xl py-8 px-10 placeholder:text-2xl w-full border rounded-full shadow"
       />
       <Button
         text="Search"
-        className="px-8 py-2 bg-orange-900 rounded-full absolute right-20 top-5"
+        className="px-8 py-4 w-40 text-xl bg-orange-400 text-white rounded-full absolute right-8 top-5"
       />
     </form>
   );

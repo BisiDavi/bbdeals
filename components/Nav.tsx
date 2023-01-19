@@ -11,7 +11,7 @@ export default function Nav() {
         <Logo />
         <div className="group text-white flex items-center space-x-6">
           <ul className="space-x-6 flex">
-            {menuContent.map((item) => (
+            {menuContent.header.map((item) => (
               <li key={item.menu} className="hover:text-red-500">
                 {item.link && <Link href={item.link}>{item.menu}</Link>}
               </li>

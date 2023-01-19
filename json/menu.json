@@ -1,26 +1,35 @@
-[
-  {
-    "type": "dropdown",
-    "menu": "Categories",
-    "dropdown": [
-      { "menu": "Category 1", "link": "#category1" },
-      { "menu": "Category 2", "link": "#category1" },
-      { "menu": "Category 3", "link": "#category1" }
-    ]
-  },
-  {
-    "type": "menu",
-    "menu": "Observation List",
-    "link": "#observation-list"
-  },
-  {
-    "type": "menu",
-    "menu": "About Us",
-    "link": "#about-us"
-  },
-  {
-    "type": "menu",
-    "menu": "Contact Us",
-    "link": "#contact Us"
-  }
-]
+{
+  "header": [
+    {
+      "type": "dropdown",
+      "menu": "Categories",
+      "dropdown": [
+        { "menu": "Category 1", "link": "#category1" },
+        { "menu": "Category 2", "link": "#category1" },
+        { "menu": "Category 3", "link": "#category1" }
+      ]
+    },
+    {
+      "type": "menu",
+      "menu": "Observation List",
+      "link": "#observation-list"
+    },
+    {
+      "type": "menu",
+      "menu": "About Us",
+      "link": "#about-us"
+    },
+    {
+      "type": "menu",
+      "menu": "Contact Us",
+      "link": "#contact Us"
+    }
+  ],
+  "footer": [
+    { "text": "About", "link": "#about-us" },
+    { "text": "Contact Us", "link": "#contact-us" },
+    { "text": "Dealers", "link": "#dealers" },
+    { "text": "Terms & Conditions", "link": "#terms-conditions" },
+    { "text": "FAQ", "link": "#faq" }
+  ]
+}

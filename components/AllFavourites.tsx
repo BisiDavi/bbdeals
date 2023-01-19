@@ -5,7 +5,9 @@ import favouriteContent from "@/json/products.json";
 export default function AllFavourites() {
   return (
     <div className="container flex flex-col mx-auto my-4 mb-8">
-      <h2 className="text-center text-2xl font-medium">All Time Favourites</h2>
+      <h2 className="text-center text-2xl font-medium my-4">
+        All Time Favourites
+      </h2>
       <ul className="flex items-center w-full">
         {favouriteContent.favourites.map((item, index) => (
           <li key={`${item.text}-${index}`} className=" w-full">

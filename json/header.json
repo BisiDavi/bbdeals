@@ -1,0 +1,26 @@
+[
+  {
+    "element": "Silver",
+    "price": "$23.00",
+    "diff": "$2.00",
+    "type": "down"
+  },
+  {
+    "element": "Gold",
+    "price": "$23.00",
+    "diff": "$2.00",
+    "type": "up"
+  },
+  {
+    "element": "Platinum",
+    "price": "$23.00",
+    "diff": "$2.00",
+    "type": "up"
+  },
+  {
+    "element": "Palladium",
+    "price": "$23.00",
+    "diff": "$2.00",
+    "type": "up"
+  }
+]

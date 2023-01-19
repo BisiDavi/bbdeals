@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Logo() {
   return (
     <Link href="/">
-      <Image src="/logo.webp" alt="logo" />
+      <Image src="/logo.webp" alt="logo" height={100} width={200} />
     </Link>
   );
 }

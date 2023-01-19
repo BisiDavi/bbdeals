@@ -12,12 +12,12 @@ interface Props {
 
 export default function Product({ product }: Props) {
   return (
-    <div className="shadow rounded-lg">
+    <div className="shadow rounded-lg p-4">
       <Image src={product.img} height={200} width={200} alt={product.title} />
-      <h4>{product.title}</h4>
-      <p>{product.dealer}</p>
-      <p>{product.discount}</p>
-      <div className="group flex justify-between">
+      <h4 className="text-center font-bold">{product.title}</h4>
+      <p className="font-normal mt-4">{product.dealer}</p>
+      <p className="font-medium text-center">{product.discount}</p>
+      <div className="group flex mt-4 justify-between">
         <Button
           text="Compare"
           className="bg-orange-500 py-3 text-white rounded-full w-32"

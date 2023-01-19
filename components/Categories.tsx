@@ -9,9 +9,9 @@ export default function Categories() {
         {categoryContent.categories.map((item) => (
           <li
             key={item.category}
-            className="my-4 flex space-x-4 border-b last:border-b-0"
+            className="my-4 flex items-center space-x-4 border-b last:border-b-0"
           >
-            <Image src={item.img} alt={item.category} height={50} width={50} />
+            <Image src={item.img} alt={item.category} height={40} width={40} />
             <p className="font-medium text-gray-500">{item.category}</p>
           </li>
         ))}

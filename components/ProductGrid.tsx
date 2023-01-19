@@ -10,11 +10,11 @@ export default function ProductGrid() {
         <div className="left space-x-2">
           <Button
             text="Trending"
-            className="py-4 rounded-lg w-40 bg-orange-500"
+            className="py-4 rounded-lg text-white w-40 bg-orange-500"
           />
           <Button
             text="Near to Spot"
-            className="py-4 rounded-lg w-40 bg-gray-500"
+            className="py-4 rounded-lg  w-40 bg-gray-500"
           />
           <Button
             text="Newly Launched"
@@ -26,7 +26,7 @@ export default function ProductGrid() {
           <li>Grids View</li>
         </ul>
       </div>
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-4 gap-4 mt-4">
         {productsContent.products.map((product, index) => (
           <Product key={`${product.title}-${index}`} product={product} />
         ))}

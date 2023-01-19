@@ -1,6 +1,8 @@
-import menuContent from "@/json/menu.json";
+import Link from "next/link";
+
 import Logo from "@/components/Logo";
 import Button from "@/components/Button";
+import menuContent from "@/json/menu.json";
 
 export default function Nav() {
   return (
@@ -10,7 +12,9 @@ export default function Nav() {
         <div className="group text-white flex space-x-4">
           <ul className="space-x-6 flex">
             {menuContent.map((item) => (
-              <li key={item.menu}>{item.menu}</li>
+              <li key={item.menu}>
+                {item.link && <Link href={item.link}>{item.menu}</Link>}
+              </li>
             ))}
           </ul>
           <Button text="Request Product" />

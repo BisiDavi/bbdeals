@@ -2,7 +2,7 @@ import headerContent from "@/json/header.json";
 
 export default function TopHeader() {
   return (
-    <div className="w-full bg-black">
+    <div className="w-full bg-gray-600">
       <div className="container text-white mx-auto flex justify-between items-center">
         <ul className="space-x-8">
           {headerContent.map((item) => {
@@ -16,9 +16,7 @@ export default function TopHeader() {
             );
           })}
         </ul>
-        <a href="mailto:bbdg@gmail.com" className="">
-          bbdg@gmail.com
-        </a>
+        <a href="mailto:bbdg@gmail.com">bbdg@gmail.com</a>
       </div>
     </div>
   );

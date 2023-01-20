@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Button from "@/components/Button";
-import { ProductProps } from "@/types";
+import type { ProductProps } from "@/types";
 
-export default function Product({ product }: ProductProps) {
+export default function ProductList({ product }: ProductProps) {
   return (
-    <div className="">
+    <div>
       <Image
         src={product.img}
         height={120}
@@ -19,16 +19,17 @@ export default function Product({ product }: ProductProps) {
         <p className="font-medium text-center text-lightOrange font-semibold">
           {product.discount}
         </p>
-        <div className="group flex mt-4 space-x-2 justify-between">
-          <Button
-            text="Compare"
-            className="bg-lightOrange py-3 text-white rounded-full w-32"
-          />
-          <Button
-            text="Observe"
-            className="bg-darkGray py-3 text-white rounded-full w-32"
-          />
-        </div>
+      </div>
+
+      <div className="group flex mt-4 space-x-2 justify-between">
+        <Button
+          text="Compare"
+          className="bg-lightOrange py-3 text-white rounded-full w-32"
+        />
+        <Button
+          text="Observe"
+          className="bg-darkGray py-3 text-white rounded-full w-32"
+        />
       </div>
     </div>
   );

@@ -122,5 +122,10 @@
       "img": "/gold-coin.webp",
       "text": "Gold American Eagle"
     }
+  ],
+  "productCategories": ["Trending", "Near to Spot", "Newly Launched"],
+  "views": [
+    { "text": "Detail View", "icon": "/list.png" },
+    { "text": "Grid View", "icon": "/grid.png" }
   ]
 }

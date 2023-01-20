@@ -6,15 +6,17 @@ import Button from "@/components/Button";
 import productsContent from "@/json/products.json";
 
 interface Props {
+  view: string;
   setView: Dispatch<SetStateAction<string>>;
 }
 
-export default function ProductGridHeader({ setView }: Props) {
+export default function ProductGridHeader({ view, setView }: Props) {
   const [productCategory, setProductCategory] = useState("Trending");
 
   function onCategoryHandler(item: string) {
     setProductCategory(item);
   }
+
   return (
     <>
       <h2 className="font-normal text-3xl">Top Products</h2>
@@ -36,23 +38,27 @@ export default function ProductGridHeader({ setView }: Props) {
           })}
         </div>
         <div className="right flex space-x-4">
-          {productsContent.views.map((item) => (
-            <Button
-              key={item.text}
-              icon={
-                <Image
-                  src={item.icon}
-                  height={30}
-                  width={30}
-                  alt={item.text}
-                  className="mr-1"
-                />
-              }
-              text={item.text}
-              className="flex items-center hover:bg-gray-100 px-4 hover:rounded-full py-2"
-              onClick={() => setView(item.value)}
-            />
-          ))}
+          {productsContent.views.map((item) => {
+            const activeButton =
+              view === item.value ? "bg-gray-100 rounded-full" : "";
+            return (
+              <Button
+                key={item.text}
+                icon={
+                  <Image
+                    src={item.icon}
+                    height={30}
+                    width={30}
+                    alt={item.text}
+                    className="mr-1"
+                  />
+                }
+                text={item.text}
+                className={`flex ${activeButton} items-center hover:bg-gray-100 px-4 hover:rounded-full py-2`}
+                onClick={() => setView(item.value)}
+              />
+            );
+          })}
         </div>
       </div>
     </>

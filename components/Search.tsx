@@ -21,10 +21,13 @@ export default function Search({ query, search, setQuery, setSearch }: Props) {
   }
 
   const searchText = search ? "Clear" : "Search";
+  const searchColor = search ? "bg-red-500" : "bg-lightOrange";
 
   const searchFunc = (e: any) => {
     e.preventDefault();
-    return search ? resetQuery() : onSubmit();
+    if (query.length > 0) {
+      return search ? resetQuery() : onSubmit();
+    }
   };
 
   return (
@@ -41,7 +44,7 @@ export default function Search({ query, search, setQuery, setSearch }: Props) {
 
       <Button
         text={searchText}
-        className="px-8 py-3 w-40 text-xl bg-lightOrange text-white rounded-full absolute right-8 top-4"
+        className={`${searchColor} px-8 py-3 w-40 text-xl text-white rounded-full absolute right-8 top-4`}
         type="submit"
       />
     </form>

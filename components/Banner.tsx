@@ -1,13 +1,7 @@
 import Image from "next/image";
-import type { Dispatch, SetStateAction } from "react";
+import { PropsWithChildren } from "react";
 
-import Search from "@/components/Search";
-
-interface Props {
-  setQuery: Dispatch<SetStateAction<string>>;
-}
-
-export default function Banner({ setQuery }: Props) {
+export default function Banner({ children }: PropsWithChildren) {
   return (
     <div className="w-full relative">
       <Image
@@ -17,7 +11,7 @@ export default function Banner({ setQuery }: Props) {
         width={1400}
         className="w-full"
       />
-      <Search setQuery={setQuery} />
+      {children}
     </div>
   );
 }

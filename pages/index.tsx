@@ -10,15 +10,24 @@ import ProductGrid from "@/components/ProductGrid";
 import ProductView from "@/components/ProductView";
 import Layout from "@/layout";
 import productsContent from "@/json/products.json";
+import Search from "@/components/Search";
 
 export default function Home() {
   const [query, setQuery] = useState("");
+  const [search, setSearch] = useState(false);
   const searcher = new FuzzySearch(productsContent.products, ["title"]);
-  const result = query ? searcher.search(query) : productsContent.products;
+  const result = search ? searcher.search(query) : productsContent.products;
 
   return (
     <Layout title="Welcome, find bullions at best prices">
-      <Banner setQuery={setQuery} />
+      <Banner>
+        <Search
+          query={query}
+          setQuery={setQuery}
+          search={search}
+          setSearch={setSearch}
+        />
+      </Banner>
       <AdBanner url="/ad-banner-1.webp" />
       <ProductView>
         <Categories />

@@ -2,25 +2,36 @@ import Button from "@/components/Button";
 import Product from "@/components/Product";
 import productsContent from "@/json/products.json";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function ProductGrid() {
+  const [productCategory, setProductCategory] = useState("Trending");
+
+  function onCategoryHandler(item: string) {
+    setProductCategory(item);
+  }
+
+  const categories = ["Trending", "Near to Spot", "Newly Launched"];
+
   return (
     <div>
       <h2 className="font-normal text-3xl">Top Products</h2>
       <div className="group flex mt-4 justify-between items-center">
         <div className="left space-x-2">
-          <Button
-            text="Trending"
-            className="py-4 rounded-lg text-white w-36 bg-lightOrange"
-          />
-          <Button
-            text="Near to Spot"
-            className="py-4 rounded-lg w-40 bg-gray-200"
-          />
-          <Button
-            text="Newly Launched"
-            className="py-4 rounded-lg w-40 bg-gray-200"
-          />
+          {categories.map((item) => {
+            const style =
+              productCategory === item
+                ? "bg-lightOrange text-white"
+                : "bg-gray-200 text-black";
+            return (
+              <Button
+                key={item}
+                text={item}
+                className={`py-4 rounded-lg w-36 ${style}`}
+                onClick={() => onCategoryHandler(item)}
+              />
+            );
+          })}
         </div>
         <ul className="right flex space-x-4">
           <li className="flex items-center space-x-2">

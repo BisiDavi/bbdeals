@@ -4,7 +4,7 @@ import type { ProductProps } from "@/types";
 
 export default function ProductList({ product }: ProductProps) {
   return (
-    <div className="flex bg-white w-full px-4 py-4 my-2 justify-between shadow border hover:bg-gray-50 rounded-lg">
+    <div className="flex items-center bg-white w-full px-4 py-4 my-2 justify-between shadow border hover:bg-gray-50 rounded-lg">
       <Image src={product.img} height={120} width={120} alt={product.title} />
       <div className="">
         <h4 className="text-center font-bold">{product.title}</h4>
@@ -14,7 +14,7 @@ export default function ProductList({ product }: ProductProps) {
           {product.discount}
         </p>
       </div>
-      <div className="group flex flex-col mt-4 space-y-2 justify-between">
+      <div className="group flex w-1/3 h-12 mt-4  justify-between">
         <Button
           text="Compare"
           className="bg-lightOrange py-3 text-white rounded-full w-32"

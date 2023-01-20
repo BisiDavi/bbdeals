@@ -125,7 +125,7 @@
   ],
   "productCategories": ["Trending", "Near to Spot", "Newly Launched"],
   "views": [
-    { "text": "Detail View", "icon": "/list.png" },
-    { "text": "Grid View", "icon": "/grid.png" }
+    { "text": "Detail View", "value": "list", "icon": "/list.png" },
+    { "text": "Grid View", "value": "grid", "icon": "/grid.png" }
   ]
 }
